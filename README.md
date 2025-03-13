@@ -6,7 +6,7 @@ Description: Build a blog management application where users can create, organiz
 * Add and delete comments on posts. Store comments in `comments.json` with `id`, `postId`, `author`, `content`, `date`.
 * Bookmark important posts. Bookmarked posts appear at the top of the list.
 * Real-time search by post title/content (frontend filtering). Filter posts by tags or author.
-* Export all posts as individual Markdown files and download as a `.zip`. Use `marked` package to generate Markdown content. Use `archiver` package for ZIP compression.
+* Export all posts as individual Markdown files and download as a `.zip`. Use `json2md` package to generate Markdown files. Use `archiver` package for ZIP compression.
 * Centralize state for posts, comments, and UI interactions (e.g., loading states).
 
 ### API Endpoints:
@@ -55,7 +55,7 @@ comments.json
 ### Evaluation Criteria:
 * Implementation of all features, including advanced state management with Context/useReducer.
 * Code organization (separation of concerns for UI, state, and API layers).
-* Proper validation using Zod on both frontend and backend.
+* Proper validation using Zod on the backend.
 * Responsive and intuitive UI with TailwindCSS.
 * Adherence to RESTful API design.
 * Meaningful Git commits (one per feature) and daily pushes.
