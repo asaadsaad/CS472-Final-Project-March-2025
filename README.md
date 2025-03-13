@@ -3,9 +3,10 @@ Description: Build a blog management application where users can create, organiz
 
 ### Core Functionality
 * Create, edit, and delete blog posts. Store posts in `posts.json` with fields: `id` (UUID), `title`, `content`, `author`, `tags` (array), `date`, `bookmarked` (boolean). Use `uuid` package for generating unique IDs.
+* Filter displayed posts by received tags or authors.
 * Add and delete comments on posts. Store comments in `comments.json` with `id`, `postId`, `author`, `content`, `date`.
 * Bookmark important posts. Bookmarked posts appear at the top of the list.
-* Real-time search by post title/content (frontend filtering). Filter posts by tags or author.
+* Search by post title. 
 * Export all posts as individual Markdown files and download as a `.zip`. Use `json2md` package to generate Markdown files. Use `archiver` package for ZIP compression.
 * Centralize state for posts, comments, and UI interactions (e.g., loading states).
 
@@ -17,6 +18,7 @@ Description: Build a blog management application where users can create, organiz
 * `GET /posts/:id/comments`: Fetch all comments for a post.
 * `POST /posts/:id/comments`: Add a comment.
 * `DELETE /comments/:id`: Delete a comment.
+* `GET /posts/search`: expect a `q` query parameter and return posts that contains the text in the title, if no `q` is passed, return the first 15 posts.
 * `GET /posts/export`: Export all posts as Markdown files in a ZIP.
 
 ### File-Based Storage Examples:
