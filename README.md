@@ -71,7 +71,7 @@ comments.json
 Contact me during office hours (10:00 AM–12:00 PM and 2:00–3:00 PM, Mon–Sat). Support includes design reviews, and best practices guidance.
 
 ### Final Submission:
-* Deadline: Wednesday at 9:00 PM. Submit a demo video (no code explanation) and ensure code is pushed to the maharishi-university repository.
+* Deadline: Wednesday at 9:00 PM. Record a demo video (no code explanation) and send me the link by email.
 
 Good luck, and happy coding!
 
