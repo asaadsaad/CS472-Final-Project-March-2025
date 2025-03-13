@@ -10,11 +10,11 @@ Description: Build a blog management application where users can create, organiz
 * Centralize state for posts, comments, and UI interactions (e.g., loading states).
 
 ### API Endpoints:
-* `GET /posts`: Fetch all posts.
+* `GET /posts`: Fetch all posts in pages of 15, sorted by date, expect a `page` query paramter, and return first page when `page` is not included.
 * `POST /posts`: Create a new post.
 * `PATCH /posts/:id`: Update a post.
 * `DELETE /posts/:id`: Delete a post.
-* `GET /posts/:id/comments`: Fetch comments for a post.
+* `GET /posts/:id/comments`: Fetch all comments for a post.
 * `POST /posts/:id/comments`: Add a comment.
 * `DELETE /comments/:id`: Delete a comment.
 * `GET /posts/export`: Export all posts as Markdown files in a ZIP.
@@ -61,11 +61,11 @@ comments.json
 * Meaningful Git commits (one per feature) and daily pushes.
 
 ### Notes
-* A daily push is required to track your code progress and measure your performance.
+* A daily push is required to track your code progress and measure your performance. Missing the daily push will affect your final project grade.
 * Students are expected to be available on MS-Teams to receive calls and check on their progress every day from 10:00 AM to 12:00 PM, and 2:00 PM to 3:00 PM during the project.
 
 ### Need Assistance?
-Contact me during office hours (10:00 AM–12:00 PM and 2:00–5:00 PM, Mon–Sat). Support includes debugging, design reviews, and best practices guidance.
+Contact me during office hours (10:00 AM–12:00 PM and 2:00–3:00 PM, Mon–Sat). Support includes design reviews, and best practices guidance.
 
 ### Final Submission:
 * Deadline: Wednesday at 9:00 PM. Submit a demo video (no code explanation) and ensure code is pushed to the maharishi-university repository.
