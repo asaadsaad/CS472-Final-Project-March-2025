@@ -1,5 +1,5 @@
 # CS472 Final Project March 2025: Blog Management Platform
-Description: Build a blog management application where users can create, organize, and share blog posts. Use Node filesystem to store posts and comments in JSON files. 
+Build a blog management platform where users can create, and interact with blog posts. You will use Node filesystem to store posts and comments in JSON files. 
 
 ### Core Functionality
 * Create, edit, and delete blog posts. Store posts in `posts.json` with fields: `id` (UUID), `title`, `content`, `author`, `tags` (array), `date`, `bookmarked` (boolean). Use `uuid` package for generating unique IDs.
