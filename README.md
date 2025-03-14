@@ -8,7 +8,7 @@ Description: Build a blog management application where users can create, organiz
 * Bookmark important posts. Bookmarked posts appear at the top of the list.
 * Search by post title. 
 * Export all posts as individual Markdown files and download as a `.zip`. Use `json2md` package to generate Markdown files. Use `archiver` package for ZIP compression.
-* Centralize state for posts, comments, and UI interactions (e.g., loading states).
+* Centralize state for posts, comments, and UI interactions (e.g., loading states). Use React Context with Reducer Function.
 * Use Jotai to track post visits history, when the user clicks and visits a post, save the post ID in Jotai. When displaying the list of posts, visited posts must appear differently than un-visited posts. Visits history should be maintained between sessions. Allow users to clear the visits history.
 
 ### API Endpoints:
