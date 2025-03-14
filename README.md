@@ -73,7 +73,7 @@ Students are expected to be available on MS-Teams to receive calls and check on 
 Contact me during office hours (10:00 AM–12:00 PM and 2:00–3:00 PM, Mon–Sat). Support includes design reviews, and best practices guidance.
 
 ### Final Submission:
-* Deadline: Wednesday at 9:00 PM. Record a demo video (no code explanation) and send me the link by email.
+* Deadline: Wednesday at 9:00 PM. Update this README.md file to include a link to your recorded demo video. The video must include a walkthrough the user experience, showcasing all the implemented features.
 
 Good luck, and happy coding!
 
