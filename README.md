@@ -1,5 +1,5 @@
 # CS472 Final Project March 2025: Blog Management Platform
-Description: Build a blog management application where users can create, organize, and share blog posts. Use Node filesystem to store posts and comments in JSON files. Implement advanced state management with React Context, Reducer Function. Jotai will only be used to track post visits history.
+Description: Build a blog management application where users can create, organize, and share blog posts. Use Node filesystem to store posts and comments in JSON files. 
 
 ### Core Functionality
 * Create, edit, and delete blog posts. Store posts in `posts.json` with fields: `id` (UUID), `title`, `content`, `author`, `tags` (array), `date`, `bookmarked` (boolean). Use `uuid` package for generating unique IDs.
@@ -8,8 +8,8 @@ Description: Build a blog management application where users can create, organiz
 * Bookmark important posts. Bookmarked posts appear at the top of the list.
 * Search by post title. 
 * Export all posts as individual Markdown files and download as a `.zip`. Use `json2md` package to generate Markdown files. Use `archiver` package for ZIP compression.
-* Centralize state for posts, comments, and UI interactions (e.g., loading states). Use React Context with Reducer Function.
-* Use Jotai to track post visits history, when the user clicks and visits a post, save the post ID in Jotai. When displaying the list of posts, visited posts must appear differently than un-visited posts. Visits history should be maintained between sessions. Allow users to clear the visits history.
+* Centralize advanced global state for posts, comments, and UI interactions (e.g., loading states). Use React Context with Reducer Function.
+* Track post visits history using Jotai, when the user clicks and visits a post, save the post ID in a global array. When displaying the list of posts, visited posts must appear differently than un-visited posts. Visits history should be maintained between sessions. Allow users to clear the visits history.
 
 ### API Endpoints:
 * `GET /posts`: Fetch all posts in pages of 15, sorted by date, expect a `page` query paramter, and return first page when `page` is not included.
