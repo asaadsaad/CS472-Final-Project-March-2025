@@ -21,6 +21,8 @@ Description: Build a blog management application where users can create, organiz
 * `DELETE /comments/:id`: Delete a comment.
 * `GET /posts/search`: expect a `q` query parameter and return posts that contains the text in the title, if no `q` is passed, return the first 15 posts.
 * `GET /posts/export`: Export all posts as Markdown files in a ZIP.
+  
+**Note:** It is required to validate user input against a schema using Zod.
 
 ### File-Based Storage Examples:
 posts.json
@@ -56,16 +58,16 @@ comments.json
 * Backend: Express, Zod (validation), Node filesystem.
 
 ### Evaluation Criteria:
-* Implementation of all features, including advanced state management with Context/useReducer.
-* Code organization (separation of concerns for UI, state, and API layers).
-* Proper validation using Zod on the backend.
-* Responsive and intuitive UI with TailwindCSS.
-* Adherence to RESTful API design.
-* Meaningful Git commits (one per feature) and daily pushes.
+<ins>**Version Control (10 points):**</ins>
+50% of the grade will be based on the proper use of version control, including clear and descriptive commit messages that follow best practices (e.g., concise, meaningful, and referencing specific tasks or features). Additionally, students must demonstrate consistent daily progress by pushing their work to the remote repository daily throughout the project duration.
+
+   
+<ins>**Code Quality and Feature Implementation (10 points):**</ins>
+The remaining 50% of the grade will be awarded based on the quality and completeness of the codebase. This includes successfully implementing all required features, adhering to coding best practices (e.g., clean code, proper input validation using Zod on the backend, responsive and intuitive UI with TailwindCSS, and efficient algorithms), and ensuring the project is functional, well-structured, and free of critical errors.
+
 
 ### Notes
-* A daily push is required to track your code progress and measure your performance. Missing the daily push will affect your final project grade.
-* Students are expected to be available on MS-Teams to receive calls and check on their progress every day from 10:00 AM to 12:00 PM, and 2:00 PM to 3:00 PM during the project.
+Students are expected to be available on MS-Teams to receive calls and check on their progress every day from 10:00 AM to 12:00 PM, and 2:00 PM to 3:00 PM during the project.
 
 ### Need Assistance?
 Contact me during office hours (10:00 AM–12:00 PM and 2:00–3:00 PM, Mon–Sat). Support includes design reviews, and best practices guidance.
